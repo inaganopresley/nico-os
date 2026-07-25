@@ -1,4 +1,21 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Railway
+.railway/
+
+# App data
 app.db
-.env
+*.db
+
+# OS
+.DS_Store
+Thumbs.db
