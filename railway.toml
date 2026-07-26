@@ -1,5 +1,5 @@
 [service]
-rootDirectory = "/app"
+rootDirectory = "/実装"
 builder = "NIXPACKS"
 
 [deploy]
@@ -7,6 +7,3 @@ startCommand = "gunicorn main:app -w 2 -k uvicorn.workers.UvicornWorker --bind 0
 healthcheckPath = "/health"
 healthcheckTimeout = 100
 restartPolicyType = "ON_FAILURE"
-
-[build]
-buildCommand = "pip install -r requirements.txt"
